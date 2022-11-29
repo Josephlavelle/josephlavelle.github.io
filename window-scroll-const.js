@@ -1,4 +1,4 @@
-var scrollNum = document.documentElement.scrollTop || document.body.scrollTop;
+var scrollNum = document.documentElement.scrollY || document.body.scrollY;
 
 window.addEventListener('scroll', () => {
     console.log(scrollNum)
