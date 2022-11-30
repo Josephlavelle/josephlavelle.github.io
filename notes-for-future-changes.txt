@@ -1,1 +1,5 @@
 notes below
+
+
+1- animation only on first load 
+2- github fonts
