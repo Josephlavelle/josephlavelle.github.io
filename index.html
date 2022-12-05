@@ -6,40 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Lavelle</title>
     <link rel="stylesheet" href="JL.css">
-    <!--style tag is mostly for all opening animations that are sole to the opening of the index page-->
-    <style>
-    p{margin-top: 30px;width: 55em;margin: 0 auto;}
-    h3{
-    animation: article-load 300ms ease-in var(--article-load-delay);
-    animation-fill-mode: forwards;
-    transform: translateY(-20px);
-    opacity: 0;}
-    h1{
-    animation: article-load 300ms ease-in var(--article-load-delay);
-    animation-fill-mode: forwards;
-    transform: translateY(-20px);
-    opacity: 0;
-    }
-    nav li:first-child {
-    animation-name:nav-first-link-load;
-    transform: translateX(-1000%);
-    }
-    nav li:last-child {
-    animation-name:nav-first-link-load;
-    transform: translateX(1000%);
-    }
-    nav li{
-    animation-name: nav-link-load;
-    animation-duration: var(--nav-link-load-time);
-    animation-timing-function: ease-in;
-    animation-delay: var(--nav-load-time);
-    animation-fill-mode: forwards;
-    transform: scale(0);
-    }
-    nav{
-    animation: nav-load var(--nav-load-time) ease-in;
-    }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style class="style">
+        p{margin-top: 30px;width: 55em;margin: 0 auto;}
+        h3{
+        animation: article-load 300ms ease-in var(--article-load-delay);
+        animation-fill-mode: forwards;
+        transform: translateY(-20px);
+        opacity: 0;}
+        h1{
+        animation: article-load 300ms ease-in var(--article-load-delay);
+        animation-fill-mode: forwards;
+        transform: translateY(-20px);
+        opacity: 0;
+        }
+        nav li:first-child {
+        animation-name:nav-first-link-load;
+        transform: translateX(-1000%);
+        }
+        nav li:last-child {
+        animation-name:nav-first-link-load;
+        transform: translateX(1000%);
+        }
+        nav li{
+        animation-name: nav-link-load;
+        animation-duration: var(--nav-link-load-time);
+        animation-timing-function: ease-in;
+        animation-delay: var(--nav-load-time);
+        animation-fill-mode: forwards;
+        transform: scale(0);
+        }
+        nav{
+        animation: nav-load var(--nav-load-time) ease-in;
+        }
     </style>
+    <!--style tag is mostly for all opening animations that are sole to the opening of the index page-->
 </head>
 <body><!--dynamic background image-->
     <div class="background-img">
@@ -102,5 +103,6 @@
         </div>
 <script src="window-scroll-const.js"></script>    
 <script src="scroll-func.js" defer></script>
+<script src="first-open.js" ></script>
 </body>
 </html>
