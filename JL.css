@@ -1,10 +1,10 @@
 @font-face {
-    src: url( Fonts/AlbertSans-Light.ttf);
+    src: url( ./Fonts/AlbertSans-Light.ttf);
     font-family: albert-sans;
 }
 @font-face {
     font-family: albert-sans-thin;
-    src: url(Fonts/AlbertSans-Thin.ttf);
+    src: url(./Fonts/AlbertSans-Thin.ttf);
 }
 :root{
     --moving-bg-img: -150px;
