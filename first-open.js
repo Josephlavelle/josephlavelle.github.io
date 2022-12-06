@@ -1,9 +1,6 @@
 var num_opened = 0;
 var num_of_open = localStorage.getItem('num-of-opens');
 const style = document.getElementsByClassName('style');
-var up = document.getElementById('GFG_UP');
-var down = document.getElementById('GFG_DOWN');
-var parent = document.getElementById('parent');
 
 function GFG_Fun() {
  $('style').empty();
