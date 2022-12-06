@@ -31,7 +31,7 @@
                 fwrite($file, $User_ip . "\n");
                 fclose($file);
                 
-                $to = 'joe.lavelle@matthew-lavelle.com';
+                $to = 'Joseph.lavelle@queensu.ca';
                 $body = "";
                 
                 $body .= "from: " . $username . "\n";
@@ -40,9 +40,9 @@
                 
                 mail($to, $subject, $body);
                 if($language == "english"){
-                    header("Location: http://matthew-lavelle.com/josephlavelle.com");
+                    header("Location: http://www.josephlavelle.com");
                 } else{
-                    header("Location: http://matthew-lavelle.com/josephlavelle.com");
+                    header("Location: http://www.josephlavelle.com");
                 }
                 
             }
@@ -60,16 +60,16 @@
                 fwrite($file, "User Ip :");
                 fwrite($file, $User_ip . "\n");
                 fclose($file);
-                header("Location: http://matthew-lavelle.com/josephlavelle.com");
+                header("Location: http://www.josephlavelle.com");
             }
 
         }
         else{
-            header("Location: http://matthew-lavelle.com/josephlavelle.com");
+            header("Location: http://www.josephlavelle.com");
         }
     }
     else{
-        header("Location: http://matthew-lavelle.com/josephlavelle.com");
+        header("Location: http://www.josephlavelle.com");
     }
     
     
