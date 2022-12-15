@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Lavelle</title>
     <link rel="stylesheet" href="JL.css">
-    <script src="window-scroll-const.js"></script> 
+    <script src="window-scroll-const.js"></script>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body><!--dynamic background image-->
@@ -20,60 +21,62 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html"><b>Home</b></a></li>
-                    <li><a href="experience.htm"><b>Experience</b></a></li>
-                    <li><a href="projects.htm"><b>Projects</b></a></li>
-                    <li><a href="skills.htm"><b>Skills</b></a></li>
-                    <li><a href="contact.htm"><b>Contact</b></a></li>
+                    <li><a href="/index.html"><b>Home</b></a></li>
+                    <li><a href="/experience.htm"><b>Experience</b></a></li>
+                    <li><a href="/projects.htm"><b>Projects</b></a></li>
+                    <li><a href="/skills.htm"><b>Skills</b></a></li>
+                    <li><a href="/contact.htm"><b>Contact</b></a></li>
                 </ul>
             </nav>
         </header>
         <!-- end of nav bar-->
         <!--main article/content-->
         <main>
-            <section>
-                <article>
-                    <h2>Skills</h2>
-                    <div class="under-h2">My Skills</div>
-                    <table>
-                        <!--top Row-->
-                        <tr>
-                            <th style="border: 0;"></th>
-                            <th>Advanced(5+ projects)</th>
-                            <th>Adept(2-5 projects)</th>
-                            <th>Novice(1-2 projects)</th>
-                        </tr>
-                        <!--top row-->
-                        <tr>
-                          <td><b>Programming</b></td>
-                          <td>Python, R</td>
-                          <td style="border: 0;"></td>
-                          <td style="border: 0;"></td>
-                        </tr>
-                        <!-- Row 2 -->
-                        <tr>
-                          <td><b>Presentation</b></td>
-                          <td style="border: 0;"></td>
-                          <td>PostGres, Scala</td>
-                          <td style="border: 0;"></td>
-                        </tr>
-                        <!-- Row 3 -->
-                        <tr>
-                          <td><b>Managment</b></td>
-                          <td style="border: 0;"></td>
-                          <td style="border: 0;"></td>
-                          <td style="border: 0;"></td>
-                        </tr>
-                        <!-- Row 4 -->
-                        <tr>
-                          <td><b>Teamwork</b></td>
-                          <td style="border: 0;"></td>
-                          <td style="border: 0;"></td>
-                          <td style="border: 0;"></td>
-                        </tr>
-                    </table>
-                </article>
-            </section>
+            <main id="swup" class="transition-fade">
+                <section>
+                    <article>
+                        <h2>Skills</h2>
+                        <div class="under-h2">My Skills</div>
+                        <table>
+                            <!--top Row-->
+                            <tr>
+                                <th style="border: 0;"></th>
+                                <th>Advanced(5+ projects)</th>
+                                <th>Adept(2-5 projects)</th>
+                                <th>Novice(1-2 projects)</th>
+                            </tr>
+                            <!--top row-->
+                            <tr>
+                            <td><b>Programming</b></td>
+                            <td>Python, R</td>
+                            <td style="border: 0;"></td>
+                            <td style="border: 0;"></td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                            <td><b>Presentation</b></td>
+                            <td style="border: 0;"></td>
+                            <td>PostGres, Scala</td>
+                            <td style="border: 0;"></td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                            <td><b>Managment</b></td>
+                            <td style="border: 0;"></td>
+                            <td style="border: 0;"></td>
+                            <td style="border: 0;"></td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr>
+                            <td><b>Teamwork</b></td>
+                            <td style="border: 0;"></td>
+                            <td style="border: 0;"></td>
+                            <td style="border: 0;"></td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+            </main>
         </main>
         <!--footer-->
         <div class="bottom">
