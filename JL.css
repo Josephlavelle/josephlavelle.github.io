@@ -253,6 +253,7 @@ form button{
     width: 100%;
     height: 300px;
     font-family: albert-sans-thin;
+    padding-top: 5em;
 }
 .social-media{
     animation: article-load 300ms ease-in var(--article-load-delay);
