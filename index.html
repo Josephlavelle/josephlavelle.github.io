@@ -7,7 +7,9 @@
     <title>Joseph Lavelle</title>
     <link rel="stylesheet" href="JL.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="window-scroll-const.js"></script>     
+    <script src="window-scroll-const.js"></script>   
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
     <style class="style">
         p{margin-top: 30px;width: 55em;margin: 0 auto;}
         h3{
@@ -54,17 +56,17 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html"><b>Home</b></a></li>
-                    <li><a href="experience.htm"><b>Experience</b></a></li>
-                    <li><a href="projects.htm"><b>Projects</b></a></li>
-                    <li><a href="skills.htm"><b>Skills</b></a></li>
-                    <li><a href="contact.htm"><b>Contact</b></a></li>
+                    <li><a href="/index.html"><b>Home</b></a></li>
+                    <li><a href="/experience.htm"><b>Experience</b></a></li>
+                    <li><a href="/projects.htm"><b>Projects</b></a></li>
+                    <li><a href="/skills.htm"><b>Skills</b></a></li>
+                    <li><a href="/contact.htm"><b>Contact</b></a></li>
                 </ul>
             </nav>
         </header>
         <!-- end of nav bar-->
         <!--main article/content-->
-        <main>
+        <main id="swup" class="transition-fade">
             <section>
                 <article>
                     <style>article img{border-radius: 50%;}</style>
