@@ -8,24 +8,35 @@ export const about = {
 export const projects = [
   {
     id: 1,
-    title: "Data Pipeline Framework",
-    description: "Scalable ETL framework for processing large datasets with real-time monitoring and error handling.",
-    tags: ["Python", "Spark", "AWS"],
-    github: "https://github.com/josephlavelle",
+    title: "gRPC Distributed Filesystem",
+    description: "Multithreaded distributed file system in C++ using gRPC that synchronizes files across clients and a server with write-lock coordination and conflict resolution",
+    tags: ["C++", "Concurrency", "gRPC", "Network Programming"],
+    url: "https://github.com/josephlavelle",
+    isPrivate: true,
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
-    description: "Interactive dashboard for visualizing business metrics with drill-down capabilities.",
-    tags: ["TypeScript", "React", "D3.js"],
-    github: "https://github.com/josephlavelle",
+    title: "gRPC Distributed Filesystem",
+    description: "Multithreaded distributed file system in C++ using gRPC that synchronizes files across clients and a server with write-lock coordination and conflict resolution",
+    tags: ["C++", "Concurrency", "gRPC", "Network Programming"],
+    url: "https://github.com/josephlavelle",
+    isPrivate: true,
   },
   {
     id: 3,
-    title: "ML Model Deployment",
-    description: "End-to-end machine learning pipeline from training to production deployment with monitoring.",
-    tags: ["Python", "Docker", "Kubernetes"],
-    github: "https://github.com/josephlavelle",
+    title: "Post-Graduate Dropout Risk",
+    description: "End to end predictive analytics pipeline to estimate chance of success of current students enrolled in post-graduate studies at Georgia Tech",
+    tags: ["Python", "Docker", "PyTorch"],
+    url: "https://github.com/josephlavelle",
+    isPrivate: true,
+  },
+  {
+    id: 4,
+    title: "GroKit",
+    description: "AI-powered quiz generator. Upload any text and get instant multiple-choice questions to test your knowledge with bespoke feedback to guide your learning",
+    tags: ["React", "Flask", "Groq API", "Docker"],
+    url: "https://grok-it.xyz",
+    isPrivate: false,
   }
 ];
 

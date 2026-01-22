@@ -6,14 +6,19 @@ interface LinkCardProps {
   description: string;
   url: string;
   icon?: React.ReactNode;
+  tags?: string[];
+  isPrivate?: boolean;
 }
 
-export function LinkCard({ title, description, url, icon }: LinkCardProps) {
+export function LinkCard({ title, description, url, icon, tags, isPrivate }: LinkCardProps) {
+  const linkUrl = isPrivate ? '/private-repo' : url;
+  const linkTarget = isPrivate ? '_self' : '_blank';
+
   return (
     <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={linkUrl}
+      target={linkTarget}
+      rel={isPrivate ? undefined : "noopener noreferrer"}
       className={styles.container}
     >
       {icon && <div className={styles.iconWrapper}>{icon}</div>}
@@ -23,6 +28,15 @@ export function LinkCard({ title, description, url, icon }: LinkCardProps) {
           <ArrowUpRight size={18} className={styles.arrow} />
         </div>
         <p className={styles.description}>{description}</p>
+        {tags && tags.length > 0 && (
+          <div className={styles.tags}>
+            {tags.map((tag) => (
+              <span key={tag} className={styles.tag}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </a>
   );

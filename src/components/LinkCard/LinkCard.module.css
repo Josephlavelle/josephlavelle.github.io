@@ -79,3 +79,27 @@
   color: var(--text-secondary);
   line-height: 1.5;
 }
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.container:hover .tag {
+  border-color: rgba(139, 92, 246, 0.3);
+  color: var(--text-primary);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+}
