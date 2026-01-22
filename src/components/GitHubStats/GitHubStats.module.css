@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: var(--text-primary);
+}
+
+.username {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.container:hover .username {
+  color: var(--accent);
+}
+
+.arrow {
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.container:hover .arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.heatmap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: flex;
+  gap: 2px;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.day:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.period {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .day {
+    width: 8px;
+    height: 8px;
+  }
+
+  .grid {
+    gap: 1px;
+  }
+
+  .week {
+    gap: 1px;
+  }
+}
