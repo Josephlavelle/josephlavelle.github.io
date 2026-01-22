@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, minmax(180px, auto));
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+  grid-template-areas:
+    "about about proj2 contact"
+    "proj1 proj1 proj3 proj3"
+    "reading github grokit grokit";
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+/* Static cards - no hover effect */
+.card:global(.static) {
+  cursor: default;
+}
+
+/* Clickable cards - with hover effects */
+.card:global(.clickable) {
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:global(.clickable):hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow:
+    0 0 40px var(--accent-glow),
+    0 0 80px rgba(139, 92, 246, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.card:global(.clickable)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:global(.clickable):hover::before {
+  opacity: 1;
+}
+
+/* Grid area assignments */
+.card:global(.about) { grid-area: about; }
+.card:global(.reading) { grid-area: reading; }
+.card:global(.github) { grid-area: github; }
+.card:global(.proj1) { grid-area: proj1; }
+.card:global(.proj2) { grid-area: proj2; }
+.card:global(.proj3) { grid-area: proj3; }
+.card:global(.contact) { grid-area: contact; }
+.card:global(.grokit) { grid-area: grokit; }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "about about"
+      "reading github"
+      "proj1 proj2"
+      "proj3 proj3"
+      "contact grokit";
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "reading"
+      "github"
+      "proj1"
+      "proj2"
+      "proj3"
+      "grokit"
+      "contact";
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

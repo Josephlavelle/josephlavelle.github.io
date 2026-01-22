@@ -1,0 +1,1 @@
+export { PrivateRepo } from './PrivateRepo';
