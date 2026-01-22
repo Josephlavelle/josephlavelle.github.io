@@ -6,7 +6,7 @@ import { CurrentProjects } from './components/CurrentProjects';
 import { SocialLinks } from './components/Social';
 import { LinkCard } from './components/LinkCard';
 import { projects, socials } from './data/content';
-import { Sparkles, Database, BarChart3, Brain } from 'lucide-react';
+import { Sparkles, BarChart3, Brain } from 'lucide-react';
 
 function App() {
   return (

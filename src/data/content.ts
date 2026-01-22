@@ -1,7 +1,7 @@
 export const about = {
   name: "Joseph Lavelle",
   title: "Data Engineer",
-  bio: "Building data pipelines and solving complex problems. Passionate about turning raw data into actionable insights through scalable, efficient solutions.",
+  bio: "Building and deploying ML pipelines to solve complex problems. Passionate about turning data into actionable insights through scalable, efficient solutions with bulletproof reliability.",
   location: "Canada"
 };
 
