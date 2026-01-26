@@ -9,6 +9,10 @@ interface SocialLinksProps {
 export function SocialLinks({ linkedin, email }: SocialLinksProps) {
   return (
     <div className={styles.container}>
+      <div className={styles.header}>
+        <h3 className={styles.title}>Get in Touch</h3>
+        <p className={styles.tagline}>Let's build something together</p>
+      </div>
       <a
         href={linkedin}
         target="_blank"
