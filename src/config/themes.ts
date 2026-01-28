@@ -65,7 +65,5 @@ export const colorSchemes: Record<string, ColorScheme> = {
   },
 };
 
-// ======================================
 // Change this line to switch themes
-// ======================================
-export const activeTheme: ColorScheme = colorSchemes.monochromeBlue
+export const activeTheme: ColorScheme = colorSchemes.emeraldGold
