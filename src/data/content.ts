@@ -34,7 +34,7 @@ export const projects = [
     id: 4,
     title: "GroKit",
     description: "AI-powered quiz generator. Upload any text and get instant multiple-choice questions to test your knowledge with bespoke feedback to guide your learning",
-    tags: ["React", "Flask", "Groq API", "Docker"],
+    tags: ["React", "Flask", "LLM", "Docker"],
     url: "https://grok-it.xyz",
     isPrivate: false,
   }
@@ -51,6 +51,7 @@ export const currentlyReading = {
   title: "L'Étranger",
   author: "Albert Camus",
   coverEmoji: "https://m.media-amazon.com/images/I/61NkyEMccYL._AC_UF1000,1000_QL80_.jpg",
+  goodreadsUrl: "https://www.goodreads.com/user/show/198271617-joe-lavelle",
 };
 
 // Update these with what you're currently working on

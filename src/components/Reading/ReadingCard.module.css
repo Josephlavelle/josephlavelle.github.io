@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 16px;
   height: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header {
@@ -33,7 +35,7 @@
 .cover {
   width: 110px;
   height: 160px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(236, 72, 153, 0.2));
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   display: flex;

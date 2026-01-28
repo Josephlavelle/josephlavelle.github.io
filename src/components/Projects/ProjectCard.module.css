@@ -32,7 +32,7 @@
   width: 32px;
   height: 32px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(236, 72, 153, 0.1));
   border: 1px solid var(--border);
   color: var(--text-secondary);
   transition: all 0.3s ease;
@@ -58,7 +58,7 @@
 .link:hover {
   color: var(--text-primary);
   border-color: var(--accent);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(236, 72, 153, 0.2));
 }
 
 .description {
@@ -79,7 +79,7 @@
   font-size: 0.75rem;
   font-weight: 500;
   padding: 4px 10px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(236, 72, 153, 0.1));
   border: 1px solid var(--border);
   border-radius: 9999px;
   color: var(--text-secondary);
@@ -87,7 +87,7 @@
 }
 
 .container:hover .tag {
-  border-color: rgba(139, 92, 246, 0.3);
+  border-color: rgba(236, 72, 153, 0.3);
   color: var(--text-primary);
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(236, 72, 153, 0.15));
 }

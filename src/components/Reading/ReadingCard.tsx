@@ -4,7 +4,12 @@ import styles from './ReadingCard.module.css';
 
 export function ReadingCard() {
   return (
-    <div className={styles.container}>
+    <a
+      href={currentlyReading.goodreadsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.container}
+    >
       <div className={styles.header}>
         <BookOpen size={16} className={styles.icon} />
         <span className={styles.label}>Currently Reading</span>
@@ -26,6 +31,6 @@ export function ReadingCard() {
           <p className={styles.author}>{currentlyReading.author}</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
