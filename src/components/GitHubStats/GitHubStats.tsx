@@ -59,12 +59,16 @@ export function GitHubStats() {
   }
 
   const getLevelColor = (level: number) => {
+    const root = document.documentElement;
+    const accentRgb = getComputedStyle(root).getPropertyValue('--accent-rgb').trim() || '59, 130, 246';
+    const secondaryRgb = getComputedStyle(root).getPropertyValue('--accent-secondary-rgb').trim() || '236, 72, 153';
+
     const colors = [
-      'rgba(255, 255, 255, 0.05)', // level 0
-      'rgba(59, 130, 246, 0.3)',   // level 1
-      'rgba(59, 130, 246, 0.5)',   // level 2
-      'rgba(99, 102, 241, 0.7)',   // level 3
-      'rgba(139, 92, 246, 0.9)',   // level 4
+      'rgba(255, 255, 255, 0.05)',      // level 0
+      `rgba(${accentRgb}, 0.3)`,        // level 1
+      `rgba(${accentRgb}, 0.5)`,        // level 2
+      `rgba(${accentRgb}, 0.7)`,        // level 3
+      `rgba(${secondaryRgb}, 0.9)`,     // level 4
     ];
     return colors[level] || colors[0];
   };

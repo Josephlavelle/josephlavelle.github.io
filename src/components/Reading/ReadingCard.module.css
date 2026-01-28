@@ -35,7 +35,7 @@
 .cover {
   width: 110px;
   height: 160px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(236, 72, 153, 0.2));
+  background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.2), rgba(var(--accent-secondary-rgb), 0.2));
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   display: flex;

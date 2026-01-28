@@ -7,8 +7,10 @@ import { SocialLinks } from './components/Social';
 import { LinkCard } from './components/LinkCard';
 import { projects, socials } from './data/content';
 import { Sparkles, BarChart3, Brain } from 'lucide-react';
+import { useTheme } from './hooks/useTheme';
 
 function App() {
+  useTheme();
   return (
     <BentoGrid>
       <BentoCard className="about" delay={0}>

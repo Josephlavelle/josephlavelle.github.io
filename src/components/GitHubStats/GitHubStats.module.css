@@ -77,7 +77,7 @@
 
 .day:hover {
   transform: scale(1.2);
-  box-shadow: 0 0 8px var(--accent-glow);
+  box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.4);
 }
 
 .footer {
